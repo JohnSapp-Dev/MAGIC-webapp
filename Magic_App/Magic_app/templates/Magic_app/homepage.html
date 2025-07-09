@@ -1,0 +1,28 @@
+{% extends './base.html' %}
+{% block title %}Home{% endblock %}
+{% load static %}
+
+{% block content %}
+{% include './navbar.html' %}
+
+<body class="background_color text-color">
+  
+    <div class="container">
+      <div class="row">
+        <div class="col"><br></div>
+      </div>
+      <div class="row">
+        <div class="col"><h2 >Welcome to Magic</h2></div>
+      </div>
+      <div class="row">
+        <div class="col"><p>Monitering Attraction Guest flow with Interactive Charts</p></div>
+    </div>
+    <div class="row">
+        <div class="col"><br></div>
+    </div>
+    <div class="row">
+        <div class="col"><p>This web app tracks Theme Park wait times to give a perspective of how wait times change throughout the day</p></div>
+    </div>
+  </body>
+
+{% endblock %}

@@ -1,0 +1,43 @@
+{% extends './base.html' %}
+{% block title %}Wait time Graph{% endblock %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+{% include './navbar.html' %}
+
+  <script src="https://cdn.jsdelivr.net/npm/htmx.org@2.0.5/dist/htmx.min.js"integrity="sha384-t4DxZSyQK+0Uv4jzy5B0QyHyWQD2GFURUmxKMBVww9+e2EJ0ei/vCvv7+79z0fkr" 
+    crossorigin="anonymous"></script>
+  <body class="background_color">
+  
+    <div class="container text-color">
+      <div class="row">
+
+        <div class="col"><br></div>
+      </div>
+      <div class="row">
+
+        <div class="col"><h2>Select a Theme Park and Attraction to View the Wait time</h2></div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <form class="text-color" method="POST">
+            
+            {% csrf_token %}
+            <!--{{ form.as_p }}-->
+             {% crispy form %}
+            <!-- <button>Load Data</button> -->
+      
+          </form>
+        </div>
+        <div class="row">
+          <div class="col"><br></div>
+        </div>
+        <div class="row">
+          <div class="col">{{ chart|safe }}</div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+{% endblock %}
