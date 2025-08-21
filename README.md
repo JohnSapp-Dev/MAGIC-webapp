@@ -4,6 +4,9 @@
 
 This project serves to satisfy project requirements for Seminar in Advanced Software Development CEN-4930C
 
+## Demo
+ [![IMAGE ALT TEXT](http://img.youtube.com/vi/fQIFEVGYQRY/0.jpg)](https://www.youtube.com/watch?v=fQIFEVGYQRY "MAGIC - A wait time visualizer - by John Sapp")
+
 ## Authors
 
 - [@John Sapp](https://www.linkedin.com/in/johnsapp150/)
